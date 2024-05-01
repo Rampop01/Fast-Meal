@@ -1,9 +1,9 @@
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between  max-w-4xl mx-auto p-4 ">
       <Link
-        href=""
+        href="/"
         className="text-primary font-bold text-2xl flex items-center"
       >
         <span className="text-6xl ">
@@ -12,7 +12,7 @@ export default function Header() {
         AST MEAL
       </Link>
       <nav className="flex gap-8 text-gray-600 font-semibold items-center">
-        <Link href={""}>Home</Link>
+        <Link href={"/"}>Home</Link>
         <Link href={""}>Menu</Link>
         <Link href={""}>About</Link>
         <Link href={""}>Contact</Link>
