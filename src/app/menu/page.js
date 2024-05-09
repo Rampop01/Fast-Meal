@@ -3,7 +3,7 @@ import React from "react";
 
 function MenuPage() {
   return (
-    <div className=" ">
+    <div className="">
       <MenuItem />
     </div>
   );

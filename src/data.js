@@ -5,7 +5,7 @@ export const featuredProducts = [
     description:
       "Garnished jollof rice with plantain combined with roasted chicken",
     img: "/jollof-rice.jpeg",
-    price: 10, // Price in dollars
+    price: 10,
     options: [
       { id: 1, name: "Regular", additionalPrice: 0 },
       { id: 2, name: "Large", additionalPrice: 5 },

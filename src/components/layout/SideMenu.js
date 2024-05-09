@@ -55,11 +55,15 @@ function SideMenu() {
             </Link>
           ))}
           {!user ? (
-            <Link href="/login">Login</Link>
+            <Link href="/login" onClick={() => setOpen(!open)}>
+              Login
+            </Link>
           ) : (
-            <Link href="/orders">Orders</Link>
+            <Link href="/orders" onClick={() => setOpen(!open)}>
+              Orders
+            </Link>
           )}
-          <Link href="/cart">
+          <Link href="/cart" onClick={() => setOpen(!open)}>
             <CartIcon />
           </Link>
         </div>
