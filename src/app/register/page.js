@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function RegisterPage() {
   // const [email, setEmail] = useState("");
@@ -35,9 +33,7 @@ export default function RegisterPage() {
           // onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Register</button>
-        <div className="my-4 text-center text-gray-500">
-          or Login with provider
-        </div>
+        <div className="my-4 text-center text-gray-500">OR</div>
         <button className="flex gap-4 justify-center">
           <Image
             src="/google-trans-icon.jpeg"
