@@ -11,7 +11,7 @@ export default function LoginPage() {
   return (
     <section className="mt-8">
       <h1 className="text-center text-primary text-4xl mb-4">Login</h1>
-      <form className="max-w-xs mx-auto" onSubmit={handleFormSubmit}>
+      <form className="max-w-xs mx-auto">
         <input
           type="email"
           placeholder="email"
@@ -27,14 +27,17 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <Link href={"/"}>
-          <button type="submit">Login</button>
+          <button
+            type="submit"
+            className="text-center bg-primary w-full text-white py-2 rounded-xl font-bold"
+          >
+            Login
+          </button>
         </Link>
-        <div className="my-4 text-center text-gray-500">
-          or Login with provider
-        </div>
+        <div className="my-4 text-center text-gray-500 ">OR</div>
         <button
           onClick={() => signIn("google")}
-          className="flex gap-4 justify-center"
+          className="flex gap-4 justify-center text-center border border-primary w-full  py-2 rounded-xl font-bold "
           disabled={loginInProgress}
         >
           <Image

@@ -9,7 +9,8 @@ export default function MenuItem() {
         <Link href={`/menu/${item.id}`}>
           <div
             key={item.id}
-            className="text-center bg-gray-300 p-4 rounded-lg hover:bg-white transition-all hover:shadow-md hover:shadow-black/50 gap-4  "
+            className="text-center bg-white
+             p-4 rounded-lg hover:bg-white transition-all hover:border-primary hover:shadow-md  border shadow-md gap-4  "
           >
             <Image
               src={item.img}

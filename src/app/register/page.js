@@ -5,38 +5,36 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function RegisterPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
 
   return (
     <section className="mt-8">
       <h1 className="text-center text-primary text-4xl mb-4">Register</h1>
-      {userCreated && (
-        <div className="text-center ">
-          Account created successfully.{" "}
-          <Link href="/login" className="underline text-blue-700">
-            Login
-          </Link>{" "}
-          here
-        </div>
-      )}
-      <form className="block max-w-xs mx-auto" onSubmit={handleFormSubmit}>
+
+      <div className="text-center ">
+        Account created successfully.{" "}
+        <Link href="/login" className="underline text-blue-700">
+          Login
+        </Link>{" "}
+        here
+      </div>
+
+      <form className="block max-w-xs mx-auto">
         <input
           type="email"
           placeholder="email"
-          value={email}
-          disabled={creatingUser}
-          onChange={(e) => setEmail(e.target.value)}
+          // value={email}
+          // disabled={creatingUser}
+          // onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
           placeholder="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          // value={password}
+          // onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" disabled={creatingUser}>
-          Register
-        </button>
+        <button type="submit">Register</button>
         <div className="my-4 text-center text-gray-500">
           or Login with provider
         </div>
